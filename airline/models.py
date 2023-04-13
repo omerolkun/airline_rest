@@ -18,7 +18,7 @@ class Airline(models.Model):
 
 
 class Aircraft(models.Model):
-    #aircraft_id = models.AutoField(primary_key = True)
+    aircraft_id = models.AutoField(primary_key = True)
     manufacturer_serial_number = models.IntegerField()
     aircraft_type= models.CharField(max_length=25)
     model= models.CharField(max_length=25)
