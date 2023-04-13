@@ -1,8 +1,6 @@
-import sys
-sys.path.append("../")
-from airline import Airline
 from django.db import models
 # Create your models here.
+from airline.models import Airline
 
 
 

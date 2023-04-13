@@ -19,7 +19,7 @@ class AircraftApiView(APIView):
         List all the Aircraft items for given requested user
         '''
         aircrafts = Aircraft.objects
-        serializer = AircraftSerializer(airlines, many = True)
+        serializer = AircraftSerializer(aircrafts, many = True)
         return Response(serializer.data, status = status.HTTP_200_OK)
 
     # 2. Create
