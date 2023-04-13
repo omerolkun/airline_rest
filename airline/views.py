@@ -90,13 +90,15 @@ class AirlineDetailApiView(APIView):
                 status=status.HTTP_400_BAD_REQUEST
             )
         data = {
+            # i think no need for here, maybe i will delete later...
+            # because the argument came from request
             'name': request.data.get('name'),
             'callsign': request.data.get('callsign'),
             'founded_year': request.data.get('founded_year'),
             'base_airport': request.data.get('base_airport')
 
         }
-        serializer = AirlineSerializer(instance = airline_instance, data=data, partial = True)
+        serializer = AirlineSerializer(instance = airline_instance, data=request.data, partial = True)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_200_OK)
