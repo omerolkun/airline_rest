@@ -31,8 +31,8 @@ class AirlineApiView(APIView):
         data = {
             'name': request.data.get('name'), 
             'callsign': request.data.get('callsign'), 
-            'founded_year': request.date.get('founded_year'),
-            'base_airport': request.date.get('base_airport')
+            'founded_year': request.data.get('founded_year'),
+            'base_airport': request.data.get('base_airport')
 
         }
 
