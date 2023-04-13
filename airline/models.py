@@ -13,7 +13,9 @@ class Airline(models.Model):
 
 
     def __str__(self):
-        return self.name
+        result = ""
+        result = result +str(self.airline_id) + ", " + self.name
+        return result 
 
 
 
