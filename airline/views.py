@@ -12,7 +12,7 @@ from .serializers import AirlineSerializer
 
 class AirlineApiView(APIView):
     # add permission to check if user is authenticated
-    permission_classes = [permissions.IsAuthenticated]
+    #permission_classes = [permissions.IsAuthenticated]
 
     # 1. List all
     def get(self, request, *args, **kwargs):
@@ -50,7 +50,7 @@ class AirlineApiView(APIView):
 
 class AirlineDetailApiView(APIView):
     # add permission to check if user is authenticated
-    permission_classes = [permissions.IsAuthenticated]
+    #permission_classes = [permissions.IsAuthenticated]
 
     def get_object(self, airline_idx): #chande paramater name 
         '''
