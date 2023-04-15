@@ -3,9 +3,9 @@
 This repository is simple django project which uses rest_framework library and creating a rest api.
 
 ## Requirements
-* Python 3.2 or higher
+* Python 3.10
 
-* Django 2.2 or higher
+* Django 3.2
 
 * Django Rest Framework
 
