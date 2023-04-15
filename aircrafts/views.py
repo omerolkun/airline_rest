@@ -11,7 +11,7 @@ from .serializers import AircraftSerializer
 
 class AircraftApiView(APIView):
     # add permission to check if user is authenticated
-    #permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAuthenticated]
 
     # 1. List all
     def get(self, request, *args, **kwargs):
@@ -51,7 +51,7 @@ class AircraftApiView(APIView):
 
 class AircraftDetailApiView(APIView):
     # add permission to check if user is authenticated
-    #permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAuthenticated]
 
     def get_object(self, aircraft_idx): #chande paramater name 
         '''
