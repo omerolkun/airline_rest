@@ -29,7 +29,7 @@ class AircraftApiView(APIView):
         '''
         data = {
             'manufacturer_serial_number': request.data.get('manufacturer_serial_number'),
-            'aircraft_type': request.data.get('aircraft_type'),
+            'type': request.data.get('type'),
             'model': request.data.get('model'),
             'operator_airline': request.data.get('operator_airline'),
             'number_of_engines': request.data.get('number_of_engines')
